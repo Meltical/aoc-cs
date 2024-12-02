@@ -9,6 +9,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <EmbeddedResource Include="input\event2024\aoc_e2024_d02_p1.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <EmbeddedResource Include="input\event2024\aoc_e2024_d02_p2.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
       <None Remove="input\event2024\aoc_e2024_d01_p1.txt" />
       <EmbeddedResource Include="input\event2024\aoc_e2024_d01_p1.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>

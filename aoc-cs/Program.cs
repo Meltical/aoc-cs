@@ -6,7 +6,7 @@ namespace aoc_cs;
 
 public abstract class Program
 {
-    private static readonly List<Event> Events = [new Event(2024, [new Day01()])];
+    private static readonly List<Event> Events = [new Event(2024, [new Day01(), new Day02()])];
 
     public static void Main(string[] _)
     {
@@ -31,8 +31,7 @@ public abstract class Program
         }
 
         String input = File.ReadAllText($"input/event{e.Year}/aoc_e{e.Year}_d{d.Number:00}_p{part}.txt");
-        string
-            result = part == 1 ? d.Part1(input) : d.Part2(input);
+        string result = part == 1 ? d.Part1(input) : d.Part2(input);
         Console.WriteLine($"    Part {part}: {Ansi.Bold}{Ansi.Red}{result}{Ansi.Reset}");
     }
 }
