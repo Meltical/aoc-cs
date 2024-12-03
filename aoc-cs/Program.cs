@@ -6,7 +6,7 @@ namespace aoc_cs;
 
 public abstract class Program
 {
-    private static readonly List<Event> Events = [new Event(2024, [new Day01(), new Day02()])];
+    private static readonly List<Event> Events = [new Event(2024, [new Day01(), new Day02(), new Day03()])];
 
     public static void Main(string[] _)
     {
